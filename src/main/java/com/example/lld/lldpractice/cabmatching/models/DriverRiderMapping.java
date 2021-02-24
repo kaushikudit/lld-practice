@@ -10,10 +10,12 @@ import lombok.ToString;
 @Getter
 @Setter
 @NoArgsConstructor
+@AllArgsConstructor
 @ToString
 @Builder
-public class RideTaker extends Person{
-    public RideTaker(String name) {
-        super(name);
-    }
+public class DriverRiderMapping {
+    private String riderName;
+    private int ratingToRider;
+    private String driverName;
+    private int ratingToDriver;
 }

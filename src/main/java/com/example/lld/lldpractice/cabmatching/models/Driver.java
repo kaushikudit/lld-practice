@@ -10,8 +10,12 @@ import lombok.ToString;
 @Getter
 @Setter
 @NoArgsConstructor
-@AllArgsConstructor
 @ToString
 @Builder
-public class Driver {
+public class Driver extends Person{
+
+    public Driver(String name) {
+        super(name);
+
+    }
 }

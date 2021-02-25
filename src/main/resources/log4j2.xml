@@ -36,9 +36,8 @@
         <Logger name="com.example.lld.lldpractice" level="all" additivity="false">
             <appender-ref ref="ConsoleFile" />
         </Logger>
+        <Root level="info">
+            <appender-ref ref="ConsoleFile" />
+        </Root>
     </Loggers>
-
-    <Root level="info">
-        <appender-ref ref="ConsoleFile" />
-    </Root>
 </Configuration>
